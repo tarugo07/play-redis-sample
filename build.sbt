@@ -7,6 +7,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
+  "net.debasishg" %% "redisclient" % "3.0",
   jdbc,
   cache,
   ws,
